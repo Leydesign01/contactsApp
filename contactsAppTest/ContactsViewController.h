@@ -5,8 +5,8 @@
 //  Created by LorenzoAC on 4/30/25.
 //
 
-#ifndef ContactsViewController_h
-#define ContactsViewController_h
+#import <UIKit/UIKit.h>
 
-
-#endif /* ContactsViewController_h */
+@interface ContactsViewController : UIViewController
+- (void)loadContactsFromUserDefaults;
+@end

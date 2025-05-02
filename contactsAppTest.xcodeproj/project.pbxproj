@@ -14,6 +14,10 @@
 		EFA85AAE2DC2AFAB00CF655A /* contactsAppTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA85AAD2DC2AFAB00CF655A /* contactsAppTestTests.swift */; };
 		EFA85AB82DC2AFAB00CF655A /* contactsAppTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA85AB72DC2AFAB00CF655A /* contactsAppTestUITests.swift */; };
 		EFA85ABA2DC2AFAB00CF655A /* contactsAppTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA85AB92DC2AFAB00CF655A /* contactsAppTestUITestsLaunchTests.swift */; };
+		EFA85AC82DC2AFFC00CF655A /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA85AC72DC2AFFC00CF655A /* ContactsViewController.m */; };
+		EFA85ACA2DC2B1E400CF655A /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA85AC92DC2B1E400CF655A /* ContactsView.swift */; };
+		EFA85ACD2DC2B6CF00CF655A /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA85ACC2DC2B6CF00CF655A /* AddContactView.swift */; };
+		EFA85ACF2DC2C11000CF655A /* ContactStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA85ACE2DC2C11000CF655A /* ContactStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,12 @@
 		EFA85AB32DC2AFAB00CF655A /* contactsAppTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = contactsAppTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA85AB72DC2AFAB00CF655A /* contactsAppTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactsAppTestUITests.swift; sourceTree = "<group>"; };
 		EFA85AB92DC2AFAB00CF655A /* contactsAppTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactsAppTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EFA85AC62DC2AFFB00CF655A /* contactsAppTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "contactsAppTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		EFA85AC72DC2AFFC00CF655A /* ContactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		EFA85AC92DC2B1E400CF655A /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		EFA85ACB2DC2B40400CF655A /* ContactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		EFA85ACC2DC2B6CF00CF655A /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
+		EFA85ACE2DC2C11000CF655A /* ContactStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,12 @@
 				EFA85A9E2DC2AFA800CF655A /* ContentView.swift */,
 				EFA85AA02DC2AFAA00CF655A /* Assets.xcassets */,
 				EFA85AA22DC2AFAA00CF655A /* Preview Content */,
+				EFA85AC72DC2AFFC00CF655A /* ContactsViewController.m */,
+				EFA85AC62DC2AFFB00CF655A /* contactsAppTest-Bridging-Header.h */,
+				EFA85AC92DC2B1E400CF655A /* ContactsView.swift */,
+				EFA85ACB2DC2B40400CF655A /* ContactsViewController.h */,
+				EFA85ACC2DC2B6CF00CF655A /* AddContactView.swift */,
+				EFA85ACE2DC2C11000CF655A /* ContactStore.swift */,
 			);
 			path = contactsAppTest;
 			sourceTree = "<group>";
@@ -195,6 +211,7 @@
 				TargetAttributes = {
 					EFA85A982DC2AFA700CF655A = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 					EFA85AA82DC2AFAB00CF655A = {
 						CreatedOnToolsVersion = 15.2;
@@ -258,7 +275,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFA85A9F2DC2AFA800CF655A /* ContentView.swift in Sources */,
+				EFA85ACD2DC2B6CF00CF655A /* AddContactView.swift in Sources */,
+				EFA85AC82DC2AFFC00CF655A /* ContactsViewController.m in Sources */,
 				EFA85A9D2DC2AFA800CF655A /* contactsAppTestApp.swift in Sources */,
+				EFA85ACF2DC2C11000CF655A /* ContactStore.swift in Sources */,
+				EFA85ACA2DC2B1E400CF655A /* ContactsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"contactsAppTest/Preview Content\"";
@@ -438,6 +460,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lorenzoAc.project1.contactsAppTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "contactsAppTest/contactsAppTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,6 +472,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"contactsAppTest/Preview Content\"";
@@ -467,6 +492,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lorenzoAc.project1.contactsAppTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "contactsAppTest/contactsAppTest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
